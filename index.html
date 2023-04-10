@@ -107,58 +107,15 @@
   <button type="button" onclick="showurl()">Click Me!</button>
   
   <div>
-     <object id="guidest" type="text/html"></object>
-    <p>aaaabbbbaaaaaa</p> 
+     <object id="show_guide" type="text/html"></object>
   </div>
-  
-  
-<div dir="rtl" id="guides" style="padding:50px">
-  <div id="g1">
-    <p>1ניסיון</p>
-  </div>
-  <div id="g2" style="display:none">
-    <p>ניסיון2</p>
-  </div>
-  <div id="g3" style="display:none">
-    <p>ניסיון3</p>
-  </div>
-  <div id="g4" style="display:none">
-    <p>ניסיון4</p>
-  </div>
-  <div id="g5" style="display:none">
-    <p>ניסיון5</p>
-  </div>
-  <div id="g6" style="display:none">
-    <p>6ניסיון</p>
-  </div>
-  <div id="g7" style="display:none">
-    <p>ניסיון7</p>
-  </div>
-  <div id="g8" style="display:none">
-    <p>ניסיון8</p>
-  </div>
-</div>
 
-<script>
-function show_relevant_guide(guide){
-document.getElementById("g1").style.display="none";
-document.getElementById("g2").style.display="none";
-document.getElementById("g3").style.display="none";
-document.getElementById("g4").style.display="none";
-document.getElementById("g5").style.display="none";
-document.getElementById("g6").style.display="none";
-document.getElementById("g7").style.display="none";
-document.getElementById("g8").style.display="none";
-
-document.getElementById(guide).style.display="unset";
-
-location.hash = "#"+guide;
-};
-  
-  function showurl(){
-    document.getElementById("guidest").data="firewall_block_net.html";
+  <script>
+  function show_relevant_guide(guide){
+    document.getElementById("show_guide").data="firewall_block_net.html";
+    location.hash = "#show_guide";
   };
-</script>
+  </script>
 
 
 <footer align="center">
