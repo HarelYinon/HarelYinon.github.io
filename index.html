@@ -17,10 +17,8 @@
       background-color: powderblue;
     }
     </style>
-    
-  
-<meta name="NetsparkQuiltingResult" total-length="6576" removed="0" rules-found="w5013,w5014,w3163,w2358,w2280,w3144,w2732,w14175,w18344,w18271,w4017,w7586,w7587,w16240,w28563,w28564,w29025,w13152" />
 </head>
+  
 <body dir="rtl">
 
 <!-- Top menu -->
@@ -40,28 +38,28 @@
 <div class="w3-row-padding w3-padding-16 w3-center" id="guides">
   <table>
     <tr>
-      <th onclick="show_relevant_guide('g1')"><a href="#g1">
+      <th onclick="show_relevant_guide('firewall_block_net.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Firewall_%28computing%29.svg/640px-Firewall_%28computing%29.svg.png" alt="firewall">
           <h3> מדריך 1: חסימת האינטרנט דרך פיירוול</h3>
           <p>במדריך זה נקבל הסבר איך לחסום את האינטרנט דרך פיירוול</p>
         
       </a></th>
-      <th onclick="show_relevant_guide('g2')"><a href="#g2">
+      <th onclick="show_relevant_guide('allow_chrome.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Chromium_Material_Icon.png?uselang=he" alt="firewall">
           <h3> מדריך 2: לאפשר רק לכרום גישה לאינטרנט</h3>
           <p>במדריך זה נקבל דוגמה איך לאפשר לאפליקציה ספציפית גישה לאינטרנט</p>
         
       </a></th>
-      <th onclick="show_relevant_guide('g3')"><a href="#g3">
+      <th onclick="show_relevant_guide('chrome_admx.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/G-icon-user.png?uselang=he" alt="firewall">
           <h3> מדריך 3: רשימה לבנה לאתרים בכרום חלק 1</h3>
           <p>במדריך זה נקבל הסבר איך להוסיף חוקי מדיניות לכרום שיתנו לנו בקרה על השימוש בדפדפן</p>
         
       </a></th>
-      <th onclick="show_relevant_guide('g4')"><a href="#g4">
+      <th onclick="show_relevant_guide('chrome_url_white_list.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/G-icon-user.png?uselang=he" alt="firewall">
           <h3> מדריך 4: רשימה לבנה לאתרים בכרום חלק 2</h3>
@@ -70,28 +68,28 @@
       </a></th>
     </tr>
     <tr>
-      <th onclick="show_relevant_guide('g5')"><a href="#g5">
+      <th onclick="show_relevant_guide('standard_user.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/User_icon-cp.svg?uselang=he" alt="firewall">
           <h3> מדריך 5: יצירת משתמש מוגבל</h3>
           <p> במדריך זה נקבל הסבר איך ליצור משתמש רגיל שאין לו הרשאות לשנות את כל ההגבלות שעשינו במדריכים הקודמים בלא סיסמת מנהל</p>
         
       </a></th>
-      <th onclick="show_relevant_guide('g6')"><a href="#g6">
+      <th onclick="show_relevant_guide('permissions.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Israel_road_sign_402.svg?uselang=he" alt="firewall">
           <h3> מדריך 6: תיקיות בהרשאות מיוחדות</h3>
           <p>במדריך זה נקבל הסבר אלו הן התיקיות שמשתמש רגיל לא יכול לשנות ללא סיסמת מנהל</p>
         
       </a></th>
-      <th onclick="show_relevant_guide('g7')"><a href="#g7">
+      <th onclick="show_relevant_guide('site_research.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Magnifying_glass_icon_by_Manjiro5.svg?uselang=he" alt="firewall">
           <h3> מדריך 7: חקירת אתרים</h3>
           <p>במדריך זה נקבל הסבר איך לחקור אתר על מנת לאפשר גלישה גם באתרים מורכבים כמו בנקים</p>
         
       </a></th>
-      <th onclick="show_relevant_guide('g8')"><a href="#g8">
+      <th onclick="show_relevant_guide('allow_apps.html')"><a>
         
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Aspirin-skeletal_benzene-circle.svg?uselang=he" alt="firewall">
           <h3> מדריך 8: לאפשר גישה לאפליקציות מורכבות</h3>
@@ -103,8 +101,6 @@
 </div> 
  </div>
 <!-- End page content -->
-   
-  <button type="button" onclick="showurl()">Click Me!</button>
   
   <div>
      <object id="show_guide" type="text/html"></object>
@@ -112,7 +108,7 @@
 
   <script>
   function show_relevant_guide(guide){
-    document.getElementById("show_guide").data="firewall_block_net.html";
+    document.getElementById("show_guide").data="BlockNetGuides/"+guide;
     location.hash = "#show_guide";
   };
   </script>
