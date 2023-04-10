@@ -107,12 +107,13 @@
   </div>
 
   <script>
-    var tmphash = "show_guide";
+    let tmphash = "show_guide";
   function show_relevant_guide(guide){
-    var elmnt = document.getElementById(tmphash).data="BlockNetGuides/"+guide;
-    elmnt.id += "1';
-    tmphash += "1";
     location.hash = "#"+tmphash;
+    var elmnt = document.getElementById(tmphash);
+    elmnt.data="BlockNetGuides/"+guide;
+    tmphash = String(Math.floor(Math.random()*10000));
+    elmnt.id += tmphash
   };
   </script>
 
