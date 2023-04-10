@@ -103,10 +103,12 @@
 </div> 
  </div>
 <!-- End page content -->
-   <div>
-     <object type="text/html" data="firewall_block_net.html"></object>
-     <p>aaaabbbbaaaaaa</p>
-    <!--button type="button" onclick=>Click Me!</button-->
+   
+  <button type="button" onclick=>Click Me!</button>
+  
+  <div>
+     <object id="guides" type="text/html"></object>
+    <p>aaaabbbbaaaaaa</p> 
   </div>
   
   
@@ -154,7 +156,7 @@ location.hash = "#"+guide;
 };
   
   function showurl(){
-    
+    document.getElementById("guides").data="firewall_block_net.html";
   };
 </script>
 
