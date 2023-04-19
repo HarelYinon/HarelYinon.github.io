@@ -34,6 +34,10 @@
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
+  <div>
+     <object id="show_guide" style="width:100%" type="text/html"></object>
+  </div>
+  
   <!-- First Photo Grid-->
 <div class="w3-row-padding w3-padding-16 w3-center" id="guides">
   <table>
@@ -101,19 +105,19 @@
 </div> 
  </div>
 <!-- End page content -->
-  
-  <div>
-     <object id="show_guide" style="width:100%" type="text/html"></object>
-  </div>
 
   <script>
     let tmphash = "show_guide";
   function show_relevant_guide(guide){
-    location.hash = "#"+tmphash;
+    // location.hash = "#"+tmphash;
     var elmnt = document.getElementById(tmphash);
     elmnt.data="BlockNetGuides/"+guide;
-    tmphash = String(Math.floor(Math.random()*10000));
-    elmnt.id = tmphash;
+    
+    //tmphash = String(Math.floor(Math.random()*10000));
+    //elmnt.id = tmphash;
+    
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
   };
   </script>
 
